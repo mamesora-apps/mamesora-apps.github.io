@@ -1,0 +1,33 @@
+:root{
+  --bg:#fbfaf6; --card:#ffffff; --ink:#22252b; --sub:#5b616b; --line:#e6e2d8;
+  --accent:#1f3a6e; --star:#e8a317; --mark:#fff3cc;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#12151c; --card:#1b1f29; --ink:#eceef2; --sub:#a7adb8; --line:#2c3240;
+    --accent:#9db8ef; --star:#f2c14e; --mark:#3a3420; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  line-height:1.8;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+header img{width:56px;height:56px;border-radius:13px;flex:none}
+h1{font-size:1.5rem;line-height:1.4;margin:0}
+.lead{color:var(--sub);margin:4px 0 28px}
+h2{font-size:1.1rem;margin:32px 0 8px;padding-left:10px;border-left:4px solid var(--star)}
+h3{font-size:1rem;margin:20px 0 4px}
+p,li{margin:0 0 8px}
+ul{padding-left:1.3em;margin:0 0 8px}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+.mail{display:inline-block;font-weight:600;word-break:break-all}
+.ph{background:var(--mark);border-radius:4px;padding:0 4px}
+nav.links{display:flex;flex-wrap:wrap;gap:8px 16px;margin:24px 0 0;font-size:.95rem}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--sub);font-size:.85rem}
+.apps{list-style:none;padding:0}
+.apps li{display:flex;gap:14px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 12px}
+.apps img{width:64px;height:64px;border-radius:15px;flex:none}
+.apps b{display:block;font-size:1.05rem}
+.apps small{color:var(--sub);display:block;line-height:1.6}
